@@ -73,12 +73,24 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': BASE_DIR / 'db.postgresql',
+#    }
+#}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'db.postgresql',
+        'NAME': 'pricingcalc',
+        'USER': 'pricingcalc',
+        'PASSWORD': '1*UR7@9&`L[BFhs|',
+        'HOST': '192.168.240.3',  # Use private IP
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
